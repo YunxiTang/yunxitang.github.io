@@ -1,40 +1,33 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Yunxi Tang
+  label: Robotics Scientist
+  email: yunxitang@cuhk.edu.hk
+  location: Hong Kong SAR, China
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: A robotics and AI reseacher, with an occasional interest in photography.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
+  - network: GitHub
+    username: YunxiTang
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+    street: AB1, The Chinese University of Hong Kong 
+    city: ""
+    region: Hong Kong SAR
+    postalCode: ""
+    countryCode: Hong Kong SAR
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
+      - institution: The Chinese University of Hong Kong 
+        location: Hong Kong SAR
+        url: https://www.cuhk.edu.hk/english/
+        area: Mechanical and Automation Engineering
+        studyType: Ph.D
+        start_date: 2021
+        end_date: 2025
         score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+        courses: ""
 
       - institution: Eidgenössische Technische Hochschule
         location: Zurich, Switzerland
