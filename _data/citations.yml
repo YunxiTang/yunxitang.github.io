@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-18'
+  last_updated: '2026-05-27'
 papers:
   HlvVxEYAAAAJ:0EnyYjriUFMC:
     citations: 0
@@ -10,7 +10,7 @@ papers:
     title: 'Bootstrapping robotic skill learning with intuitive teleoperation: Initial feasibility study'
     year: '2023'
   HlvVxEYAAAAJ:9yKSN-GCB0IC:
-    citations: 82
+    citations: 79
     title: Controlling bending deformation of a shape memory alloy-based soft planar gripper to grip deformable objects
     year: '2021'
   HlvVxEYAAAAJ:IjCSPb-OGe4C:
@@ -20,7 +20,7 @@ papers:
   HlvVxEYAAAAJ:Se3iqnhoufwC:
     citations: 0
     title: Hierarchical Deformation Planning and Neural Tracking for DLOs in Constrained Environments
-    year: '2025'
+    year: '2026'
   HlvVxEYAAAAJ:Tyk-4Ss8FVUC:
     citations: 28
     title: Learning-based MPC with safety filter for constrained deformable linear object manipulation
