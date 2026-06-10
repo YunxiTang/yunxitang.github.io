@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-01'
+  last_updated: '2026-06-10'
 papers:
   HlvVxEYAAAAJ:0EnyYjriUFMC:
     citations: 0
@@ -10,7 +10,7 @@ papers:
     title: 'Bootstrapping robotic skill learning with intuitive teleoperation: Initial feasibility study'
     year: '2023'
   HlvVxEYAAAAJ:9yKSN-GCB0IC:
-    citations: 84
+    citations: 83
     title: Controlling bending deformation of a shape memory alloy-based soft planar gripper to grip deformable objects
     year: '2021'
   HlvVxEYAAAAJ:IjCSPb-OGe4C:
@@ -74,6 +74,6 @@ papers:
     title: Appending Propellers to Leg for Enhancing Robustness of Hopping Locomotion
     year: '2025'
   HlvVxEYAAAAJ:zYLM7Y9cAGgC:
-    citations: 24
+    citations: 25
     title: Towards safe landing of falling quadruped robots using a 3-dof morphable inertial tail
     year: '2023'
