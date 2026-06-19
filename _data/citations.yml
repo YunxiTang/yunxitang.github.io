@@ -1,14 +1,22 @@
 metadata:
-  last_updated: '2026-06-10'
+  last_updated: '2026-06-19'
 papers:
   HlvVxEYAAAAJ:0EnyYjriUFMC:
-    citations: 0
+    citations: 1
     title: 'Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics'
     year: '2026'
   HlvVxEYAAAAJ:2osOgNQ5qMEC:
     citations: 4
     title: 'Bootstrapping robotic skill learning with intuitive teleoperation: Initial feasibility study'
     year: '2023'
+  HlvVxEYAAAAJ:5nxA0vEk-isC:
+    citations: 0
+    title: Propeller-Assisted Robust 3D Hopping Robot with Hierarchical Force Allocation
+    year: '2026'
+  HlvVxEYAAAAJ:8k81kl-MbHgC:
+    citations: 0
+    title: "Surg-NAT+: negation-aware vision\u2013language refinement for fine-grained surgical understanding"
+    year: '2026'
   HlvVxEYAAAAJ:9yKSN-GCB0IC:
     citations: 83
     title: Controlling bending deformation of a shape memory alloy-based soft planar gripper to grip deformable objects
@@ -22,7 +30,7 @@ papers:
     title: Hierarchical Deformation Planning and Neural Tracking for DLOs in Constrained Environments
     year: '2026'
   HlvVxEYAAAAJ:Tyk-4Ss8FVUC:
-    citations: 28
+    citations: 30
     title: Learning-based MPC with safety filter for constrained deformable linear object manipulation
     year: '2024'
   HlvVxEYAAAAJ:UeHWp8X0CEIC:
@@ -38,7 +46,7 @@ papers:
     title: Inequality Constrained Trajectory Optimization with A Hybrid Multiple-shooting iLQR
     year: '2021'
   HlvVxEYAAAAJ:WF5omc3nYNoC:
-    citations: 3
+    citations: 4
     title: Manipulating Elasto-Plastic Objects With 3D Occupancy and Learning-Based Predictive Control
     year: '2025'
   HlvVxEYAAAAJ:Y0pCki6q_DkC:
@@ -70,10 +78,10 @@ papers:
     title: "Operational Space Control for Planar PAN\u20131 Underactuated Manipulators Using Orthogonal Projection and Quadratic Programming"
     year: '2021'
   HlvVxEYAAAAJ:ufrVoPGSRksC:
-    citations: 0
+    citations: 1
     title: Appending Propellers to Leg for Enhancing Robustness of Hopping Locomotion
     year: '2025'
   HlvVxEYAAAAJ:zYLM7Y9cAGgC:
-    citations: 25
+    citations: 26
     title: Towards safe landing of falling quadruped robots using a 3-dof morphable inertial tail
     year: '2023'
