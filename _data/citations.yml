@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-06-19'
+  last_updated: '2026-07-06'
 papers:
   HlvVxEYAAAAJ:0EnyYjriUFMC:
-    citations: 1
+    citations: 3
     title: 'Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics'
     year: '2026'
   HlvVxEYAAAAJ:2osOgNQ5qMEC:
-    citations: 4
+    citations: 5
     title: 'Bootstrapping robotic skill learning with intuitive teleoperation: Initial feasibility study'
     year: '2023'
   HlvVxEYAAAAJ:5nxA0vEk-isC:
@@ -18,13 +18,17 @@ papers:
     title: "Surg-NAT+: negation-aware vision\u2013language refinement for fine-grained surgical understanding"
     year: '2026'
   HlvVxEYAAAAJ:9yKSN-GCB0IC:
-    citations: 83
+    citations: 84
     title: Controlling bending deformation of a shape memory alloy-based soft planar gripper to grip deformable objects
     year: '2021'
   HlvVxEYAAAAJ:IjCSPb-OGe4C:
-    citations: 8
+    citations: 9
     title: Homotopic path set planning for robot manipulation and navigation
     year: '2024'
+  HlvVxEYAAAAJ:MXK_kJrjxJIC:
+    citations: 0
+    title: Learning to Reposition Surgical Instruments via Diffusion Policy
+    year: '2026'
   HlvVxEYAAAAJ:Se3iqnhoufwC:
     citations: 0
     title: Hierarchical Deformation Planning and Neural Tracking for DLOs in Constrained Environments
@@ -62,7 +66,7 @@ papers:
     title: Dynamic visual tracking for robot manipulator using adaptive fading Kalman filter
     year: '2020'
   HlvVxEYAAAAJ:eQOLeE2rZwMC:
-    citations: 1
+    citations: 2
     title: Learning to hop for a single-legged robot with parallel mechanism
     year: '2025'
   HlvVxEYAAAAJ:qjMakFHDy7sC:
@@ -82,6 +86,6 @@ papers:
     title: Appending Propellers to Leg for Enhancing Robustness of Hopping Locomotion
     year: '2025'
   HlvVxEYAAAAJ:zYLM7Y9cAGgC:
-    citations: 26
+    citations: 27
     title: Towards safe landing of falling quadruped robots using a 3-dof morphable inertial tail
     year: '2023'
