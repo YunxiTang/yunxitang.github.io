@@ -1,14 +1,18 @@
 metadata:
-  last_updated: '2026-07-29'
+  last_updated: '2026-08-07'
 papers:
   HlvVxEYAAAAJ:0EnyYjriUFMC:
-    citations: 3
+    citations: 6
     title: 'Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics'
     year: '2026'
   HlvVxEYAAAAJ:2osOgNQ5qMEC:
     citations: 5
     title: 'Bootstrapping robotic skill learning with intuitive teleoperation: Initial feasibility study'
     year: '2023'
+  HlvVxEYAAAAJ:3fE2CSJIrl8C:
+    citations: 0
+    title: Actuation-constrained control framework for optimal microswarm navigation with swarm stability guarantee
+    year: '2025'
   HlvVxEYAAAAJ:5nxA0vEk-isC:
     citations: 0
     title: Propeller-Assisted Robust 3D Hopping Robot with Hierarchical Force Allocation
@@ -18,11 +22,11 @@ papers:
     title: "Surg-NAT+: negation-aware vision\u2013language refinement for fine-grained surgical understanding"
     year: '2026'
   HlvVxEYAAAAJ:9yKSN-GCB0IC:
-    citations: 84
+    citations: 86
     title: Controlling bending deformation of a shape memory alloy-based soft planar gripper to grip deformable objects
     year: '2021'
   HlvVxEYAAAAJ:IjCSPb-OGe4C:
-    citations: 9
+    citations: 10
     title: Homotopic path set planning for robot manipulation and navigation
     year: '2024'
   HlvVxEYAAAAJ:MXK_kJrjxJIC:
@@ -47,14 +51,14 @@ papers:
     year: '2025'
   HlvVxEYAAAAJ:W7OEmFMy1HYC:
     citations: 6
-    title: Inequality Constrained Trajectory Optimization with A Hybrid Multiple-shooting iLQR
+    title: Inequality constrained trajectory optimization with a hybrid multiple-shooting ilqr
     year: '2021'
   HlvVxEYAAAAJ:WF5omc3nYNoC:
     citations: 4
     title: Manipulating Elasto-Plastic Objects With 3D Occupancy and Learning-Based Predictive Control
     year: '2025'
   HlvVxEYAAAAJ:Y0pCki6q_DkC:
-    citations: 3
+    citations: 2
     title: Development of a portable hybrid pendubot-acrobot robotic platform for on and off-campus teaching and learning
     year: '2021'
   HlvVxEYAAAAJ:_FxGoFyzp5QC:
@@ -62,7 +66,7 @@ papers:
     title: Generative 3D State Estimation for DLOs From Partial Observations
     year: '2025'
   HlvVxEYAAAAJ:d1gkVwhDpl0C:
-    citations: 22
+    citations: 21
     title: Dynamic visual tracking for robot manipulator using adaptive fading Kalman filter
     year: '2020'
   HlvVxEYAAAAJ:eQOLeE2rZwMC:
