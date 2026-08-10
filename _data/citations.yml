@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-07'
+  last_updated: '2026-08-10'
 papers:
   HlvVxEYAAAAJ:0EnyYjriUFMC:
     citations: 6
@@ -66,11 +66,11 @@ papers:
     title: Generative 3D State Estimation for DLOs From Partial Observations
     year: '2025'
   HlvVxEYAAAAJ:d1gkVwhDpl0C:
-    citations: 21
+    citations: 22
     title: Dynamic visual tracking for robot manipulator using adaptive fading Kalman filter
     year: '2020'
   HlvVxEYAAAAJ:eQOLeE2rZwMC:
-    citations: 2
+    citations: 3
     title: Learning to hop for a single-legged robot with parallel mechanism
     year: '2025'
   HlvVxEYAAAAJ:qjMakFHDy7sC:
