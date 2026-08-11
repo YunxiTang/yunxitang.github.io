@@ -9,6 +9,10 @@
     >
       <table class="table table-sm table-borderless">
         {% assign news = site.news | reverse %}
+        {% comment %}Items with `sticky: true` are pinned above the rest, newest first within each group.{% endcomment %}
+        {% assign pinned_news = news | where: 'sticky', true %}
+        {% assign other_news = news | where_exp: 'item', 'item.sticky != true' %}
+        {% assign news = pinned_news | concat: other_news %}
         {% if include.limit and page.announcements.limit %}
           {% assign news_limit = page.announcements.limit %}
         {% else %}
