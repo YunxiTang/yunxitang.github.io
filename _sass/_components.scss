@@ -70,6 +70,58 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// About page section rhythm: tighter, consistent spacing between the intro,
+// news, and publications blocks so more of the page fits above the fold.
+.post.about {
+  .post-header {
+    margin-bottom: 1.2rem;
+
+    .desc {
+      margin-bottom: 0;
+    }
+  }
+
+  article > h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  article > h2:first-of-type {
+    margin-top: 1.5rem;
+  }
+
+  .social {
+    margin-top: 1.5rem;
+  }
+}
+
+// Compact social icons rendered under the profile photo on the about page.
+.profile .profile-social {
+  margin-top: 0.6rem;
+  font-size: 1.5rem;
+  line-height: 1;
+
+  a {
+    margin-right: 0.55rem;
+
+    img,
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      vertical-align: text-bottom;
+    }
+
+    i::before {
+      color: var(--global-text-color);
+      transition-property: all 0.2s ease-in-out;
+    }
+
+    &:hover i::before {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
 .profile.float-right {
   margin-left: 1rem;
 }
