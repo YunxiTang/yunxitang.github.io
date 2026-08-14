@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-10'
+  last_updated: '2026-08-14'
 papers:
   HlvVxEYAAAAJ:0EnyYjriUFMC:
     citations: 6
@@ -12,7 +12,7 @@ papers:
   HlvVxEYAAAAJ:3fE2CSJIrl8C:
     citations: 0
     title: Actuation-constrained control framework for optimal microswarm navigation with swarm stability guarantee
-    year: '2025'
+    year: '2026'
   HlvVxEYAAAAJ:5nxA0vEk-isC:
     citations: 0
     title: Propeller-Assisted Robust 3D Hopping Robot with Hierarchical Force Allocation
