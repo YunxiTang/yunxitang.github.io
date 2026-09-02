@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-08-14'
+  last_updated: '2026-09-02'
 papers:
   HlvVxEYAAAAJ:0EnyYjriUFMC:
-    citations: 6
+    citations: 9
     title: 'Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics'
     year: '2026'
   HlvVxEYAAAAJ:2osOgNQ5qMEC:
@@ -22,7 +22,7 @@ papers:
     title: "Surg-NAT+: negation-aware vision\u2013language refinement for fine-grained surgical understanding"
     year: '2026'
   HlvVxEYAAAAJ:9yKSN-GCB0IC:
-    citations: 86
+    citations: 87
     title: Controlling bending deformation of a shape memory alloy-based soft planar gripper to grip deformable objects
     year: '2021'
   HlvVxEYAAAAJ:IjCSPb-OGe4C:
@@ -38,7 +38,7 @@ papers:
     title: Hierarchical Deformation Planning and Neural Tracking for DLOs in Constrained Environments
     year: '2026'
   HlvVxEYAAAAJ:Tyk-4Ss8FVUC:
-    citations: 32
+    citations: 34
     title: Learning-based MPC with safety filter for constrained deformable linear object manipulation
     year: '2024'
   HlvVxEYAAAAJ:UeHWp8X0CEIC:
@@ -46,7 +46,7 @@ papers:
     title: 'DOFS: A real-world 3D deformable object dataset with full spatial information for dynamics model learning'
     year: '2024'
   HlvVxEYAAAAJ:UebtZRa9Y70C:
-    citations: 1
+    citations: 2
     title: Learning-based motion controller for reconfigurable microswarms
     year: '2025'
   HlvVxEYAAAAJ:W7OEmFMy1HYC:
@@ -70,9 +70,13 @@ papers:
     title: Dynamic visual tracking for robot manipulator using adaptive fading Kalman filter
     year: '2020'
   HlvVxEYAAAAJ:eQOLeE2rZwMC:
-    citations: 3
+    citations: 4
     title: Learning to hop for a single-legged robot with parallel mechanism
     year: '2025'
+  HlvVxEYAAAAJ:kNdYIx-mwKoC:
+    citations: 0
+    title: Dynamic Visual Tracking for Robot Manipulator Using Adaptive Fading Kalman Filter
+    year: Unknown Year
   HlvVxEYAAAAJ:qjMakFHDy7sC:
     citations: 0
     title: 'MAEG 4070: Engineering Optimization'
