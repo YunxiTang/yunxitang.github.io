@@ -58,8 +58,8 @@ ul.task-list input[type="checkbox"] {
 .profile {
   width: 100%;
 
-  // Keep the photo compact, also when the profile block spans the full width on phones,
-  // and crop it to a square around the subject.
+  // Crop the photo to a square around the subject. The size cap only matters on phones,
+  // where the profile block spans the full width; wider screens lift it below.
   img {
     max-width: 12rem;
     aspect-ratio: 1 / 1;
@@ -227,7 +227,11 @@ html {
 
 @media (min-width: 576px) {
   .profile {
-    width: 22%;
+    width: 33.333%;
+
+    img {
+      max-width: 100%;
+    }
 
     .address {
       p {
