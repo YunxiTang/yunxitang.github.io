@@ -192,14 +192,14 @@ html {
   }
 }
 
-// Closing line of the intro on the about page, set in the serif of the headings and
-// centred between two short hairlines, like an epigraph.
+// Epigraph above the film photographs on the about page, set in the serif of the headings
+// and centred between two short hairlines.
 .post.about .tagline {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.9rem;
-  margin: 1rem 0 0.6rem;
+  margin: 0.25rem 0 0.9rem;
   font-family: "EB Garamond", Georgia, "Times New Roman", serif;
   font-size: 1.3rem;
   font-style: italic;
@@ -640,5 +640,46 @@ footer.fixed-bottom {
 
   .edu-degree {
     font-style: italic;
+  }
+}
+
+// Jump links at the top of the about page: on the name's line on wide screens, wrapping
+// beneath it on narrow ones. The right padding keeps them clear of the theme toggle.
+html {
+  scroll-behavior: smooth;
+}
+
+.post.about .post-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem 1.5rem;
+
+  .section-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem 1.1rem;
+    padding-right: 2.75rem;
+    font-size: 0.9rem;
+
+    a {
+      color: var(--global-text-color-light);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+.post.about article > h2 {
+  scroll-margin-top: 1rem;
+}
+
+@media (max-width: 575.98px) {
+  .post.about .post-header .section-nav {
+    padding-right: 0;
   }
 }
