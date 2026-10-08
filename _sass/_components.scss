@@ -58,9 +58,9 @@ ul.task-list input[type="checkbox"] {
 .profile {
   width: 100%;
 
-  // Keep the photo small when the profile block spans the full width on phones.
+  // Keep the photo small, also when the profile block spans the full width on phones.
   img {
-    max-width: 11rem;
+    max-width: 8.5rem;
   }
 
   .more-info {
@@ -75,28 +75,79 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// About page section rhythm: tighter, consistent spacing between the intro,
-// news, and publications blocks so more of the page fits above the fold.
+// Compact single-page layout: slightly smaller type and tight, consistent
+// spacing between the intro, news, publications and education blocks.
+html {
+  font-size: 15px;
+}
+
+.container[role="main"] {
+  margin-top: 1.5rem !important;
+}
+
 .post.about {
   .post-header {
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.75rem;
+
+    .post-title {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
 
     .desc {
       margin-bottom: 0;
     }
   }
 
-  article > h2 {
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
+  article {
+    > .clearfix p,
+    > .clearfix ul,
+    > ul,
+    .news .table {
+      margin-bottom: 0.5rem;
+    }
+
+    > h2 {
+      font-size: 1.5rem;
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
   }
 
-  article > h2:first-of-type {
-    margin-top: 1.5rem;
+  .publications {
+    margin-top: 0;
+
+    h2.bibliography {
+      font-size: 1.25rem;
+      padding-top: 0.5rem;
+      margin-top: 0.75rem;
+      margin-bottom: 0.25rem;
+    }
+
+    ol.bibliography {
+      margin-bottom: 0;
+
+      li {
+        margin-bottom: 0.6rem;
+
+        .abbr,
+        .abbr abbr {
+          margin-bottom: 0.25rem;
+        }
+
+        .links a.btn {
+          padding: 0.1rem 0.6rem;
+        }
+
+        .badges {
+          padding-bottom: 0.25rem;
+        }
+      }
+    }
   }
 
   .social {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
 }
 
@@ -118,7 +169,7 @@ ul.task-list input[type="checkbox"] {
 
   #light-toggle {
     position: absolute;
-    top: 3.5rem;
+    top: 1.5rem;
     right: 15px;
     z-index: 1;
     transform: none;
@@ -154,6 +205,12 @@ ul.task-list input[type="checkbox"] {
 
 .profile.float-right {
   margin-left: 1rem;
+
+  // The photo is narrower than its column; keep it flush with the page edge.
+  img {
+    display: block;
+    margin-left: auto;
+  }
 }
 
 .profile.float-left {
