@@ -12,35 +12,17 @@ profile:
     <p>The Chinese University of Hong Kong</p>
     <p>Multi-Scale Medical Robotics Center, Hong Kong SAR</p>
 
-# in-page navbar links; each id must match a section rendered by _layouts/about.liquid
-nav_sections:
-  - title: About
-    id: about
-  - title: News
-    id: news
-  - title: Publications
-    id: publications
-  - title: CV
-    id: cv
-
 publications:
   enabled: true
   selected_only: false # true lists only the papers marked as "selected={true}"
 
-cv:
-  enabled: true
-  pdf: /assets/pdf/CV_TANG_Yunxi.pdf # you can also use external links here
+education: true # lists the Education entries of `_data/cv.yml`
 social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
   limit: # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
 I am a Postdoctoral Researcher in robotics and artificial intelligence at The Chinese University of Hong Kong (CUHK), affiliated with the Multi-Scale Medical Robotics Center in Hong Kong SAR. I received my Ph.D. from the Bioinspired Robotics and Medical Technology [(BMT)](https://biomedirobotics.com/) group at CUHK, advised by [Prof. Samuel Au](https://www4.mae.cuhk.edu.hk/peoples/au-kwok-wai-samuel/).

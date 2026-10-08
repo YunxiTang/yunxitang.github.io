@@ -73,9 +73,6 @@ ul.task-list input[type="checkbox"] {
 // About page section rhythm: tighter, consistent spacing between the intro,
 // news, and publications blocks so more of the page fits above the fold.
 .post.about {
-  // Landing spot for the navbar's "about" link, clear of the fixed navbar.
-  scroll-margin-top: 6rem;
-
   .post-header {
     margin-bottom: 1.2rem;
 
@@ -98,10 +95,17 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// The navbar links jump between sections of the single-page home.
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
+// The site has no navbar; the theme toggle sits at the right end of the title line.
+.site-toolbar {
+  position: relative;
+  height: 0;
+
+  #light-toggle {
+    position: absolute;
+    top: 3.5rem;
+    right: 15px;
+    z-index: 1;
+    transform: none;
   }
 }
 
