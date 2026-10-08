@@ -41,7 +41,35 @@ layout: default
       <div class="more-info">{{ page.profile.more_info }}</div>
     {% endif %}
     {% if page.social %}
-      <div class="profile-social">{% social_links %}</div>
+      {% assign socials = site.data.socials %}
+      <div class="profile-social">
+        {% if socials.cv_pdf %}
+          <a href="{{ socials.cv_pdf | relative_url }}" title="CV">CV <i class="ai ai-cv"></i></a>
+        {% endif %}
+        {% if socials.email %}
+          <a href="mailto:{{ socials.email }}" title="Email">Email <i class="fa-solid fa-envelope"></i></a>
+        {% endif %}
+        {% if socials.scholar_userid %}
+          <a
+            href="https://scholar.google.com/citations?user={{ socials.scholar_userid }}"
+            title="Google Scholar"
+            rel="external nofollow noopener"
+            target="_blank"
+          >
+            Google Scholar <i class="ai ai-google-scholar"></i>
+          </a>
+        {% endif %}
+        {% if socials.github_username %}
+          <a
+            href="https://github.com/{{ socials.github_username }}"
+            title="GitHub"
+            rel="external nofollow noopener"
+            target="_blank"
+          >
+            GitHub <i class="fa-brands fa-github"></i>
+          </a>
+        {% endif %}
+      </div>
     {% endif %}
 
     <!-- News -->

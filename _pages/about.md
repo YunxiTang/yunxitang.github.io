@@ -8,9 +8,6 @@ profile:
   align: right
   image: yxt_v1.jpg
   image_circular: true # crops the image to make it circular
-  more_info: >
-    <p>The Chinese University of Hong Kong</p>
-    <p>Multi-Scale Medical Robotics Center, Hong Kong SAR</p>
 
 publications:
   enabled: true
