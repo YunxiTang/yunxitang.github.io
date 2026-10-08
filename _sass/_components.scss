@@ -604,3 +604,41 @@ ul.projects {
 footer.fixed-bottom {
   border-top: 1px solid var(--global-divider-color);
 }
+
+// Education: one row per degree, with the years in a column that lines up with the news
+// dates, the school in bold and the degree beneath it.
+.post.about .education {
+  margin-bottom: 0.5rem;
+
+  .edu-item {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    padding: 0.3rem 0.3rem;
+  }
+
+  .edu-years {
+    color: var(--global-accent-sage);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .edu-school {
+    font-weight: 500;
+  }
+
+  .edu-location {
+    margin-left: 0.4rem;
+    color: var(--global-text-color-light);
+    font-size: 0.9em;
+    font-weight: 400;
+
+    &::before {
+      content: "\00b7";
+      margin-right: 0.4rem;
+    }
+  }
+
+  .edu-degree {
+    font-style: italic;
+  }
+}

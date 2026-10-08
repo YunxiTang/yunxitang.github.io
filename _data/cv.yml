@@ -19,20 +19,11 @@ cv:
 
   sections:
     Education:
-      - institution: The Multi-Scale Medical Robotics Center
-        location: Hong Kong SAR
-        area: Autonomous Robotic Surgery
-        studyType: Postdoctoral Fellow
-        start_date: 2025
-        end_date: ""
-        score: ""
-        courses: ""
-
       - institution: The Chinese University of Hong Kong
         location: Hong Kong SAR
         url: https://www.cuhk.edu.hk/english/
         area: Mechanical and Automation Engineering
-        studyType: Ph.D
+        studyType: Ph.D.
         start_date: 2021
         end_date: 2025
         score: ""
@@ -42,7 +33,7 @@ cv:
         location: Hong Kong SAR
         url: https://www.cuhk.edu.hk/english/
         area: Mechanical and Automation Engineering
-        studyType: MPhil
+        studyType: M.Phil.
         start_date: 2019
         end_date: 2021
         score: ""
@@ -52,7 +43,7 @@ cv:
         location: Harbin, China
         url: https://en.hit.edu.cn/
         area: Mechatronics Engineering
-        studyType: B.Eng
+        studyType: B.Eng.
         start_date: 2015
         end_date: 2019
         score: ""

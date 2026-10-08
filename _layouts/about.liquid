@@ -100,19 +100,26 @@ layout: default
     <!-- Education (from _data/cv.yml) -->
     {% if page.education and site.data.cv.cv.sections.Education %}
       <h2><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>Education</h2>
-      <ul>
+      <div class="education">
         {% for entry in site.data.cv.cv.sections.Education %}
-          <li>
-            {{ entry.studyType }} in {{ entry.area }},
-            {% if entry.url %}
-              <a href="{{ entry.url }}">{{ entry.institution | strip }}</a>,
-            {% else %}
-              {{ entry.institution | strip }},
-            {% endif %}
-            {{ entry.start_date }}&ndash;{{ entry.end_date | default: 'present' }}
-          </li>
+          <div class="edu-item">
+            <div class="edu-years">{{ entry.start_date }}&ndash;{{ entry.end_date | default: 'present' }}</div>
+            <div class="edu-body">
+              <div class="edu-school">
+                {% if entry.url and entry.url != '' %}
+                  <a href="{{ entry.url }}" rel="external nofollow noopener" target="_blank">{{ entry.institution | strip }}</a>
+                {% else %}
+                  {{ entry.institution | strip }}
+                {% endif %}
+                {% if entry.location and entry.location != '' %}
+                  <span class="edu-location">{{ entry.location }}</span>
+                {% endif %}
+              </div>
+              <div class="edu-degree">{{ entry.studyType }} in {{ entry.area }}</div>
+            </div>
+          </div>
         {% endfor %}
-      </ul>
+      </div>
     {% endif %}
 
     <!-- Academic service and teaching (from _data/service.yml) -->
