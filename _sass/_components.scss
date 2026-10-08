@@ -80,6 +80,12 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Colour washes over the page background (defined per theme in _themes.scss).
+body {
+  background-image: var(--global-bg-wash);
+  background-repeat: no-repeat;
+}
+
 // Compact single-page layout: slightly smaller type and tight, consistent
 // spacing between the intro, news, publications and education blocks.
 html {
@@ -112,14 +118,31 @@ html {
       margin-bottom: 0.5rem;
     }
 
-    // Section titles share the serif of the paper titles.
+    // Section titles share the serif of the paper titles, in the dusty-blue accent with a
+    // short rose rule beneath.
     > h2 {
       font-family: "EB Garamond", Georgia, "Times New Roman", serif;
       font-size: 1.75rem;
       font-weight: 600;
+      color: var(--global-theme-color);
+
+      &::after {
+        content: "";
+        display: block;
+        width: 2.2rem;
+        height: 2px;
+        margin-top: 0.15rem;
+        background: var(--global-accent-rose);
+      }
       margin-top: 1.25rem;
       margin-bottom: 0.5rem;
     }
+  }
+
+  // News dates in the sage accent.
+  .news th {
+    color: var(--global-accent-sage);
+    font-weight: 500;
   }
 
   .publications {
@@ -179,7 +202,7 @@ html {
     content: "";
     flex: 0 0 2.5rem;
     height: 1px;
-    background: var(--global-text-color-light);
+    background: var(--global-accent-rose);
   }
 }
 
@@ -253,6 +276,7 @@ ul.projects {
       left: 0;
       top: 0.2em;
       font-size: 1.1em;
+      color: var(--global-accent-sage);
     }
   }
 }

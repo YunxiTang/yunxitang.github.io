@@ -27,6 +27,14 @@
   --global-newsletter-bg-color: #fbfaf6;
   --global-newsletter-text-color: #3f4648;
   --global-film-wall-color: #e4e8e5;
+  --global-accent-rose: #b98674;
+  --global-accent-sage: #7f9a88;
+  // Soft washes of colour over the paper: peach from the top right, pale aqua from the
+  // left, and a sage tint towards the bottom of the page.
+  --global-bg-wash:
+    radial-gradient(60rem 36rem at 100% 0%, rgba(232, 196, 180, 0.4), transparent 70%),
+    radial-gradient(50rem 34rem at 0% 14rem, rgba(176, 205, 208, 0.38), transparent 70%),
+    linear-gradient(180deg, transparent 55%, rgba(198, 214, 203, 0.4) 100%);
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -94,6 +102,12 @@ html[data-theme="dark"] {
   --global-newsletter-bg-color: #d9d6cd;
   --global-newsletter-text-color: #23292c;
   --global-film-wall-color: #2f383c;
+  --global-accent-rose: #c9a193;
+  --global-accent-sage: #9fb5a5;
+  --global-bg-wash:
+    radial-gradient(60rem 36rem at 100% 0%, rgba(160, 115, 102, 0.18), transparent 70%),
+    radial-gradient(50rem 34rem at 0% 14rem, rgba(88, 130, 140, 0.2), transparent 70%),
+    linear-gradient(180deg, transparent 55%, rgba(98, 126, 114, 0.16) 100%);
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #215d42;
