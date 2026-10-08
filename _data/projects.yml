@@ -15,3 +15,7 @@
 - name: Gaussian Processes for Robot
   url: https://github.com/YunxiTang/Gaussian-Processes-for-Robot
   description: Modeling robot dynamics with Gaussian processes.
+
+- name: Hopping Robot
+  url: https://github.com/YunxiTang/Advanced-Robotics-Hopping-Robot
+  description: 2D hybrid-dynamics simulation of a hopping robot with a Raibert controller for forward velocity and hopping height.
