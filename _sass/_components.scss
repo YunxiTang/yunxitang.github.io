@@ -62,16 +62,17 @@ ul.task-list input[type="checkbox"] {
   img {
     max-width: 8.5rem;
   }
+}
 
-  .more-info {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-family: monospace;
+// Affiliation lines rendered under the intro text on the about page.
+.more-info {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-family: monospace;
 
-    p {
-      display: inline-block;
-      margin: 0;
-    }
+  p {
+    display: inline-block;
+    margin: 0;
   }
 }
 
@@ -176,9 +177,9 @@ html {
   }
 }
 
-// Compact social icons rendered under the profile photo on the about page.
-.profile .profile-social {
-  margin-top: 0.6rem;
+// Compact social icons rendered under the intro text on the about page.
+.profile-social {
+  margin-bottom: 0.6rem;
   font-size: 1.5rem;
   line-height: 1;
 

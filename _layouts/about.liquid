@@ -32,16 +32,17 @@ layout: default
             cache_bust=true
           %}
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-        {% if page.social %}
-          <div class="profile-social">{% social_links %}</div>
-        {% endif %}
       </div>
     {% endif %}
 
     <div class="clearfix">{{ content }}</div>
+
+    {% if page.profile.more_info %}
+      <div class="more-info">{{ page.profile.more_info }}</div>
+    {% endif %}
+    {% if page.social %}
+      <div class="profile-social">{% social_links %}</div>
+    {% endif %}
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
@@ -77,7 +78,7 @@ layout: default
       </ul>
     {% endif %}
 
-    <!-- Contact note (social icons live in the profile block above) -->
+    <!-- Contact note (social icons sit under the intro above) -->
     {% if page.social and site.contact_note and site.contact_note != empty %}
       <div class="social">
         <div class="contact-note">{{ site.contact_note }}</div>
