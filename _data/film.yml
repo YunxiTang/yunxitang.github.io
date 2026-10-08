@@ -1,0 +1,13 @@
+# Photographs shown in the "Film Photography" section of the about page, in this order.
+# To change them: put the photos in `assets/img/film/` (about 1600px on the long edge is
+# plenty) and edit the list below. The section is hidden when the list is empty.
+#   image:   file name inside assets/img/film/
+#   caption: optional line under the photo
+#   wide:    true gives the photo the full page width (panoramas, film strips);
+#            other photos sit two to a row
+- image: snow-peak-window.jpg
+
+- image: snow-peak.jpg
+
+- image: leduomanyin.jpg
+  wide: true
