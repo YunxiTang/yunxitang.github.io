@@ -41,6 +41,8 @@
             alt=entry.preview
           %}
         {% endif %}
+      {% else %}
+        <div class="preview-placeholder" aria-hidden="true">{{ entry.venue_short | default: entry.year }}</div>
       {% endif %}
     </div>
   {% endif %}
@@ -381,7 +383,7 @@
       <div class="bibtex hidden">
         {% highlight bibtex %}
         {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
+      {% endhighlight %}
       </div>
     {% endif %}
 

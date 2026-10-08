@@ -32,7 +32,7 @@ My current research interests include:
 
 - Safety-aware autonomous surgical systems
 - Deformable object modeling, planning, and manipulation
-- In-hand object reconstruction manipulation
+- In-hand object reconstruction and manipulation
 
 Researcher by day, photographer now and then.
 {: .tagline}

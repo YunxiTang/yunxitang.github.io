@@ -69,13 +69,13 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>News</h2>
+      <h2><i class="fa-solid fa-bullhorn" aria-hidden="true"></i>News</h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
     <!-- Publications -->
     {% if page.publications and page.publications.enabled %}
-      <h2>Publications</h2>
+      <h2><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Publications</h2>
       {% if page.publications.selected_only %}
         {% include selected_papers.liquid %}
       {% else %}
@@ -85,7 +85,7 @@ layout: default
 
     <!-- Projects (from _data/projects.yml) -->
     {% if page.projects and site.data.projects %}
-      <h2>Open-Source Projects</h2>
+      <h2><i class="fa-solid fa-code-branch" aria-hidden="true"></i>Open-Source Projects</h2>
       <ul class="projects">
         {% for project in site.data.projects %}
           <li>
@@ -99,7 +99,7 @@ layout: default
 
     <!-- Education (from _data/cv.yml) -->
     {% if page.education and site.data.cv.cv.sections.Education %}
-      <h2>Education</h2>
+      <h2><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>Education</h2>
       <ul>
         {% for entry in site.data.cv.cv.sections.Education %}
           <li>
@@ -117,24 +117,22 @@ layout: default
 
     <!-- Academic service and teaching (from _data/service.yml) -->
     {% if page.service and site.data.service.reviewer %}
-      <h2>Academic Service</h2>
+      <h2><i class="fa-solid fa-pen-nib" aria-hidden="true"></i>Academic Service</h2>
       <ul>
         <li>Reviewer: {{ site.data.service.reviewer | join: ', ' }}</li>
       </ul>
     {% endif %}
 
     {% if page.teaching and site.data.service.teaching %}
-      <h2>Teaching Assistance</h2>
+      <h2><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i>Teaching Assistance</h2>
       <ul>
-        {% for course in site.data.service.teaching %}
-          <li>{{ course }}</li>
-        {% endfor %}
+        <li>{{ site.data.service.teaching | join: ', ' }}</li>
       </ul>
     {% endif %}
 
     <!-- Film photographs (from _data/film.yml) -->
     {% if page.film and site.data.film and site.data.film.size > 0 %}
-      <h2>Film Photography</h2>
+      <h2><i class="fa-solid fa-camera-retro" aria-hidden="true"></i>Film Photography</h2>
       <div class="film-wall">
         {% for photo in site.data.film %}
           {% assign film_width = photo.width | default: 1 %}

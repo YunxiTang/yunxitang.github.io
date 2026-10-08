@@ -1,17 +1,17 @@
 cv:
   name: Yunxi Tang
-  label: PostDoctoral Fellow
+  label: Postdoctoral Fellow
   email: yunxitang@cuhk.edu.hk
   location: Hong Kong SAR, China
   image: ""
-  summary: A robotics and AI reseacher, with an occasional interest in photography.
+  summary: A robotics and AI researcher, with an occasional interest in photography.
 
   social_networks:
-  - network: GitHub
-    username: YunxiTang
+    - network: GitHub
+      username: YunxiTang
 
   address:
-    street: AB1, The Chinese University of Hong Kong 
+    street: AB1, The Chinese University of Hong Kong
     city: ""
     region: Hong Kong SAR
     postalCode: ""
@@ -19,7 +19,16 @@ cv:
 
   sections:
     Education:
-      - institution: The Chinese University of Hong Kong 
+      - institution: The Multi-Scale Medical Robotics Center
+        location: Hong Kong SAR
+        area: Autonomous Robotic Surgery
+        studyType: Postdoctoral Fellow
+        start_date: 2025
+        end_date: ""
+        score: ""
+        courses: ""
+
+      - institution: The Chinese University of Hong Kong
         location: Hong Kong SAR
         url: https://www.cuhk.edu.hk/english/
         area: Mechanical and Automation Engineering
@@ -29,13 +38,23 @@ cv:
         score: ""
         courses: ""
 
-      - institution: The Chinese University of Hong Kong 
+      - institution: The Chinese University of Hong Kong
         location: Hong Kong SAR
         url: https://www.cuhk.edu.hk/english/
         area: Mechanical and Automation Engineering
         studyType: MPhil
         start_date: 2019
         end_date: 2021
+        score: ""
+        courses: ""
+
+      - institution: Harbin Institute of Technology
+        location: Harbin, China
+        url: https://en.hit.edu.cn/
+        area: Mechatronics Engineering
+        studyType: B.Eng
+        start_date: 2015
+        end_date: 2019
         score: ""
         courses: ""
 

@@ -126,6 +126,16 @@ html {
       font-weight: 600;
       color: var(--global-theme-color);
 
+      // Icon in front of each section title, in the rose accent.
+      > i {
+        width: 1.3em;
+        margin-right: 0.45rem;
+        font-size: 0.72em;
+        text-align: center;
+        vertical-align: 0.08em;
+        color: var(--global-accent-rose);
+      }
+
       &::after {
         content: "";
         display: block;
@@ -538,4 +548,59 @@ ul.projects {
 
 .d2h-diff-table {
   position: relative;
+}
+
+// ---------------------------------------------------------------------------------------
+// Layout refinements for the single-page site
+// ---------------------------------------------------------------------------------------
+
+// The name shares the serif of the section titles.
+.post.about .post-header .post-title {
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+// News: a date column just wide enough for the date, instead of a fifth of the row.
+.post.about .news th {
+  width: 7.5rem !important;
+  white-space: nowrap;
+}
+
+// Papers without a preview image get a quiet tile with the venue's initials, so every
+// entry has the same shape. Phones stack image above text, so the tile is dropped there.
+.publications ol.bibliography li .preview-placeholder {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  background: var(--global-film-wall-color);
+  color: var(--global-text-color-light);
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 576px) {
+  .publications ol.bibliography li {
+    // The text runs to the right edge of the row instead of stopping two columns short.
+    .row > div[id] {
+      flex: 1 1 0;
+      max-width: none;
+    }
+
+    .preview-placeholder {
+      display: flex;
+    }
+  }
+}
+
+// The footer blends into the page, set off by a hairline.
+footer.fixed-bottom {
+  border-top: 1px solid var(--global-divider-color);
 }
