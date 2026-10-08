@@ -58,9 +58,13 @@ ul.task-list input[type="checkbox"] {
 .profile {
   width: 100%;
 
-  // Keep the photo small, also when the profile block spans the full width on phones.
+  // Keep the photo compact, also when the profile block spans the full width on phones,
+  // and crop it to a square around the subject.
   img {
-    max-width: 8.5rem;
+    max-width: 12rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center 65%;
   }
 }
 
@@ -177,36 +181,32 @@ html {
   }
 }
 
-// Labelled social links ("GitHub <icon>") rendered under the intro text on the about page.
+// Text-only social links ("Email / Google Scholar / ...") rendered under the intro
+// text on the about page.
 .profile-social {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem 1.1rem;
+  gap: 0.2rem 0.5rem;
   margin-bottom: 0.6rem;
-  line-height: 1;
 
-  a {
+  .social-item {
     display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
+    gap: 0.5rem;
     white-space: nowrap;
 
-    i {
-      font-size: 1.5rem;
+    // "/" between items, kept outside the link so it is not clickable.
+    & + .social-item::before {
+      content: "/";
+      color: var(--global-text-color-light);
     }
+  }
 
-    i::before {
-      color: var(--global-text-color);
-      transition-property: all 0.2s ease-in-out;
-    }
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
 
     &:hover {
       color: var(--global-hover-color);
-      text-decoration: none;
-
-      i::before {
-        color: var(--global-hover-color);
-      }
     }
   }
 }

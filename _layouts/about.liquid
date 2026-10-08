@@ -43,31 +43,26 @@ layout: default
     {% if page.social %}
       {% assign socials = site.data.socials %}
       <div class="profile-social">
-        {% if socials.cv_pdf %}
-          <a href="{{ socials.cv_pdf | relative_url }}" title="CV">CV <i class="ai ai-cv"></i></a>
-        {% endif %}
         {% if socials.email %}
-          <a href="mailto:{{ socials.email }}" title="Email">Email <i class="fa-solid fa-envelope"></i></a>
+          <span class="social-item"><a href="mailto:{{ socials.email }}">Email</a></span>
         {% endif %}
         {% if socials.scholar_userid %}
-          <a
-            href="https://scholar.google.com/citations?user={{ socials.scholar_userid }}"
-            title="Google Scholar"
-            rel="external nofollow noopener"
-            target="_blank"
+          <span class="social-item"
+            ><a
+              href="https://scholar.google.com/citations?user={{ socials.scholar_userid }}"
+              rel="external nofollow noopener"
+              target="_blank"
+              >Google Scholar</a
+            ></span
           >
-            Google Scholar <i class="ai ai-google-scholar"></i>
-          </a>
         {% endif %}
         {% if socials.github_username %}
-          <a
-            href="https://github.com/{{ socials.github_username }}"
-            title="GitHub"
-            rel="external nofollow noopener"
-            target="_blank"
+          <span class="social-item"
+            ><a href="https://github.com/{{ socials.github_username }}" rel="external nofollow noopener" target="_blank">GitHub</a></span
           >
-            GitHub <i class="fa-brands fa-github"></i>
-          </a>
+        {% endif %}
+        {% if socials.cv_pdf %}
+          <span class="social-item"><a href="{{ socials.cv_pdf | relative_url }}">CV</a></span>
         {% endif %}
       </div>
     {% endif %}

@@ -7,7 +7,7 @@ subtitle: Postdoctoral Researcher in Robotics & AI
 profile:
   align: right
   image: yxt_v1.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
 
 publications:
   enabled: true
