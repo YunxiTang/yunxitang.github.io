@@ -167,6 +167,13 @@ html {
   }
 }
 
+// Photos and paper previews are shown in greyscale to match the palette. The selectors are
+// kept flat so the enlarged copy that medium-zoom appends to <body> stays grey too.
+.profile img,
+img.preview {
+  filter: grayscale(1);
+}
+
 // The site has no navbar; the theme toggle sits at the right end of the title line.
 .site-toolbar {
   position: relative;
