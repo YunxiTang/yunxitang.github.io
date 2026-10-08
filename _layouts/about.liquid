@@ -45,13 +45,13 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>news</h2>
+      <h2>News</h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
     <!-- Publications -->
     {% if page.publications and page.publications.enabled %}
-      <h2>publications</h2>
+      <h2>Publications</h2>
       {% if page.publications.selected_only %}
         {% include selected_papers.liquid %}
       {% else %}
@@ -61,7 +61,7 @@ layout: default
 
     <!-- Education (from _data/cv.yml) -->
     {% if page.education and site.data.cv.cv.sections.Education %}
-      <h2>education</h2>
+      <h2>Education</h2>
       <ul>
         {% for entry in site.data.cv.cv.sections.Education %}
           <li>

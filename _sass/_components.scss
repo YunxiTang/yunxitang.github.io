@@ -58,6 +58,11 @@ ul.task-list input[type="checkbox"] {
 .profile {
   width: 100%;
 
+  // Keep the photo small when the profile block spans the full width on phones.
+  img {
+    max-width: 11rem;
+  }
+
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -92,6 +97,17 @@ ul.task-list input[type="checkbox"] {
 
   .social {
     margin-top: 1.5rem;
+  }
+}
+
+// Black-grey-white palette: links share the text colour, so they are marked by an
+// underline and fade to grey on hover.
+.post article :is(p, li, td) > a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+
+  &:hover {
+    color: var(--global-hover-color);
   }
 }
 
@@ -146,7 +162,7 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 22%;
 
     .address {
       p {
