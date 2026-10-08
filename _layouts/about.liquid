@@ -115,6 +115,23 @@ layout: default
       </ul>
     {% endif %}
 
+    <!-- Academic service and teaching (from _data/service.yml) -->
+    {% if page.service and site.data.service.reviewer %}
+      <h2>Academic Service</h2>
+      <ul>
+        <li>Reviewer: {{ site.data.service.reviewer | join: ', ' }}</li>
+      </ul>
+    {% endif %}
+
+    {% if page.teaching and site.data.service.teaching %}
+      <h2>Teaching Assistance</h2>
+      <ul>
+        {% for course in site.data.service.teaching %}
+          <li>{{ course }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
     <!-- Contact note (social icons sit under the intro above) -->
     {% if page.social and site.contact_note and site.contact_note != empty %}
       <div class="social">

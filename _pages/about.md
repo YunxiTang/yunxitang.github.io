@@ -15,6 +15,8 @@ publications:
 
 projects: true # lists the GitHub projects of `_data/projects.yml`
 education: true # lists the Education entries of `_data/cv.yml`
+service: true # lists the reviewer venues of `_data/service.yml`
+teaching: true # lists the courses of `_data/service.yml`
 social: true # includes social icons at the bottom of the page
 
 announcements:
