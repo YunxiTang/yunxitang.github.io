@@ -212,6 +212,24 @@ html {
   }
 }
 
+// Open-source projects on the about page: a GitHub mark replaces each bullet.
+ul.projects {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    padding-left: 1.6em;
+
+    > i {
+      position: absolute;
+      left: 0;
+      top: 0.2em;
+      font-size: 1.1em;
+    }
+  }
+}
+
 .profile.float-right {
   margin-left: 1rem;
 

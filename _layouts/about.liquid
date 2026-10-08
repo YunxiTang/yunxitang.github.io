@@ -85,10 +85,11 @@ layout: default
 
     <!-- Projects (from _data/projects.yml) -->
     {% if page.projects and site.data.projects %}
-      <h2>Projects</h2>
-      <ul>
+      <h2>Open-Source Projects</h2>
+      <ul class="projects">
         {% for project in site.data.projects %}
           <li>
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
             <a href="{{ project.url }}" rel="external nofollow noopener" target="_blank">{{ project.name }}</a>
             {%- if project.description %}: {{ project.description }}{% endif %}
           </li>
