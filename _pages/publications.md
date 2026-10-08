@@ -2,19 +2,8 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Selected Publications with Significant Contributions.
-nav: true
-nav_order: 2
+nav: false
+redirect: /#publications
 ---
 
-<!-- _pages/publications.md -->
-
-<!-- Bibsearch Feature -->
-
-{% include bib_search.liquid %}
-
-<div class="publications">
-
-{% bibliography %}
-
-</div>
+Publications now live on the [home page]({{ '/' | relative_url }}#publications).

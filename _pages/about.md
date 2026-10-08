@@ -12,13 +12,30 @@ profile:
     <p>The Chinese University of Hong Kong</p>
     <p>Multi-Scale Medical Robotics Center, Hong Kong SAR</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+# in-page navbar links; each id must match a section rendered by _layouts/about.liquid
+nav_sections:
+  - title: About
+    id: about
+  - title: News
+    id: news
+  - title: Publications
+    id: publications
+  - title: CV
+    id: cv
+
+publications:
+  enabled: true
+  selected_only: false # true lists only the papers marked as "selected={true}"
+
+cv:
+  enabled: true
+  pdf: /assets/pdf/CV_TANG_Yunxi.pdf # you can also use external links here
 social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false

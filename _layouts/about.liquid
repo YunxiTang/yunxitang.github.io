@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="post about">
+<div class="post about" id="about">
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
@@ -45,9 +45,7 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
+      <h2 id="news">news</h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
@@ -59,12 +57,38 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+    <!-- Publications -->
+    {% if page.publications and page.publications.enabled %}
+      <h2 id="publications">publications</h2>
+      {% if page.publications.selected_only %}
+        {% include selected_papers.liquid %}
+      {% else %}
+        {% include bib_search.liquid %}
+        <div class="publications">{% bibliography %}</div>
+      {% endif %}
+    {% endif %}
+
+    <!-- CV -->
+    {% if page.cv and page.cv.enabled %}
+      <h2 id="cv">
+        cv
+        {% if page.cv.pdf %}
+          <a
+            {% if page.cv.pdf contains '://' %}
+              href="{{ page.cv.pdf }}"
+            {% else %}
+              href="{{ page.cv.pdf | relative_url }}"
+            {% endif %}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="float-right"
+            title="Download CV as PDF"
+          >
+            <i class="fa-solid fa-file-pdf"></i>
+          </a>
+        {% endif %}
       </h2>
-      {% include selected_papers.liquid %}
+      {% include cv_sections.liquid %}
     {% endif %}
 
     <!-- Contact note (social icons live in the profile block above) -->

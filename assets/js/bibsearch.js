@@ -51,7 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const updateInputField = () => {
-    const hashValue = decodeURIComponent(window.location.hash.substring(1)); // Remove the '#' character
+    let hashValue = decodeURIComponent(window.location.hash.substring(1)); // Remove the '#' character
+    // A hash naming an element on the page (e.g. #news) is in-page navigation, not a search term
+    if (hashValue && document.getElementById(hashValue)) {
+      hashValue = "";
+    }
     document.getElementById("bibsearch").value = hashValue;
     filterItems(hashValue);
   };

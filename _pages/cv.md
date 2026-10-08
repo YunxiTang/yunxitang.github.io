@@ -1,12 +1,9 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
 title: CV
-nav: true
-nav_order: 5
-cv_pdf: /assets/pdf/CV_TANG_Yunxi.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: ""
-toc:
-  sidebar: left
+nav: false
+redirect: /#cv
 ---
+
+The CV now lives on the [home page]({{ '/' | relative_url }}#cv).
