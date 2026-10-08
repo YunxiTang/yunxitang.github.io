@@ -13,6 +13,7 @@ publications:
   enabled: true
   selected_only: false # true lists only the papers marked as "selected={true}"
 
+projects: true # lists the GitHub projects of `_data/projects.yml`
 education: true # lists the Education entries of `_data/cv.yml`
 social: true # includes social icons at the bottom of the page
 

@@ -83,6 +83,19 @@ layout: default
       {% endif %}
     {% endif %}
 
+    <!-- Projects (from _data/projects.yml) -->
+    {% if page.projects and site.data.projects %}
+      <h2>Projects</h2>
+      <ul>
+        {% for project in site.data.projects %}
+          <li>
+            <a href="{{ project.url }}" rel="external nofollow noopener" target="_blank">{{ project.name }}</a>
+            {%- if project.description %}: {{ project.description }}{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
     <!-- Education (from _data/cv.yml) -->
     {% if page.education and site.data.cv.cv.sections.Education %}
       <h2>Education</h2>

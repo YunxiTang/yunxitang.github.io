@@ -1,0 +1,17 @@
+# Public GitHub projects listed in the "Projects" section of the about page.
+# They are displayed in the order they are defined here.
+- name: Virtual RCM
+  url: https://github.com/YunxiTang/VirtualRCM
+  description: QP-based remote center of motion control for general-purpose robot arms.
+
+- name: Diffusion Planner
+  url: https://github.com/YunxiTang/Diffusion-Planner
+  description: Diffusion-based planning for constrained deformable object manipulation.
+
+- name: Simple Robotic Trajectory Optimization
+  url: https://github.com/YunxiTang/Simple-Robotic-Trajectory-Optimization
+  description: Single- and multiple-shooting DDP with constraints for motion planning of dynamical systems.
+
+- name: Gaussian Processes for Robot
+  url: https://github.com/YunxiTang/Gaussian-Processes-for-Robot
+  description: Modeling robot dynamics with Gaussian processes.
