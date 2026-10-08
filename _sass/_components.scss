@@ -233,35 +233,51 @@ ul.projects {
   }
 }
 
-// Film photographs on the about page: two to a row, with wide ones (panoramas, film
-// strips) spanning the full width. Phones stack them in a single column.
-.film-photos {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.75rem;
+// Film photographs on the about page, hung like prints on a gallery wall: a tinted wall
+// panel, each photo in a dark frame with a white mat, all centred on one eye line.
+.film-wall {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem 1.25rem;
+  background: var(--global-divider-color);
+  border-radius: 2px;
 
-  figure {
-    margin-bottom: 0;
+  // Phones: normal prints sit two to a row, wide ones take a row of their own.
+  .film-frame {
+    flex: 0 1 calc(50% - 0.5rem);
+    min-width: 0;
+    padding: 0.3rem;
+    background: #fafaf7;
+    border: 2px solid #1a1a1a;
+    box-shadow: 0 0.45rem 0.9rem rgba(0, 0, 0, 0.3);
+  }
+
+  .film-frame-wide {
+    flex-basis: 100%;
+    order: 1;
   }
 
   img {
     display: block;
     width: 100%;
-  }
-
-  .caption {
-    margin-top: 0.4rem;
-    margin-bottom: 0;
-    color: var(--global-text-color-light);
+    height: auto;
   }
 }
 
+// Wider screens: everything hangs in a single row, each print as wide as its `width`
+// in _data/film.yml asks for.
 @media (min-width: 576px) {
-  .film-photos {
-    grid-template-columns: 1fr 1fr;
+  .film-wall {
+    flex-wrap: nowrap;
+    gap: 1.25rem;
+    padding: 1.75rem 1.5rem;
 
-    .film-photo-wide {
-      grid-column: 1 / -1;
+    .film-frame {
+      flex: var(--film-width, 1) 1 0;
+      order: 0;
     }
   }
 }

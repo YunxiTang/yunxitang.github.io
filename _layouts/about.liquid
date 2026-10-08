@@ -135,19 +135,16 @@ layout: default
     <!-- Film photographs (from _data/film.yml) -->
     {% if page.film and site.data.film and site.data.film.size > 0 %}
       <h2>Film Photography</h2>
-      <div class="film-photos">
+      <div class="film-wall">
         {% for photo in site.data.film %}
-          {% assign film_image_path = photo.image | prepend: 'assets/img/film/' %}
-          {% if photo.wide %}
-            {% assign film_sizes = '(min-width: 930px) 900px, 95vw' %}
-          {% else %}
-            {% assign film_sizes = '(min-width: 930px) 445px, (min-width: 576px) 48vw, 95vw' %}
-          {% endif %}
-          <div class="film-photo{% if photo.wide %} film-photo-wide{% endif %}">
-            {%
-              include figure.liquid loading="lazy" path=film_image_path class="img-fluid rounded z-depth-1" sizes=film_sizes
-              alt=photo.caption caption=photo.caption zoomable=true
-            %}
+          {% assign film_width = photo.width | default: 1 %}
+          <div class="film-frame{% if film_width >= 2 %} film-frame-wide{% endif %}" style="--film-width: {{ film_width }}">
+            <img
+              src="{{ photo.image | prepend: '/assets/img/film/' | relative_url }}"
+              alt="Film photograph"
+              loading="lazy"
+              data-zoomable
+            >
           </div>
         {% endfor %}
       </div>
