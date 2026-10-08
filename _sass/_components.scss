@@ -643,43 +643,31 @@ footer.fixed-bottom {
   }
 }
 
-// Jump links at the top of the about page: on the name's line on wide screens, wrapping
-// beneath it on narrow ones. The right padding keeps them clear of the theme toggle.
+// Jump links at the top of the about page: a row of their own under the name and subtitle,
+// in the serif of the headings.
 html {
   scroll-behavior: smooth;
 }
 
-.post.about .post-header {
+.post.about .post-header .section-nav {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.4rem 1.5rem;
+  gap: 0.2rem 1.25rem;
+  margin-top: 0.5rem;
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  font-weight: 500;
 
-  .section-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.2rem 1.1rem;
-    padding-right: 2.75rem;
-    font-size: 0.9rem;
+  a {
+    color: var(--global-text-color);
+    text-decoration: none;
 
-    a {
-      color: var(--global-text-color-light);
-      text-decoration: none;
-
-      &:hover {
-        color: var(--global-theme-color);
-      }
+    &:hover {
+      color: var(--global-theme-color);
     }
   }
 }
 
 .post.about article > h2 {
   scroll-margin-top: 1rem;
-}
-
-@media (max-width: 575.98px) {
-  .post.about .post-header .section-nav {
-    padding-right: 0;
-  }
 }
