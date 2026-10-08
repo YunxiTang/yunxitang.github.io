@@ -2,14 +2,17 @@
 # To change them: put the photos in `assets/img/film/` (about 1600px on the long edge is
 # plenty) and edit the list below. The section is hidden when the list is empty.
 #   image: file name inside assets/img/film/
-#   width: optional relative width on the wall (default 1); use about 2 for panoramas
-#          and film strips, which also get a row of their own on phones
+#   width: optional relative width in the row of prints (default 1, which suits 4:3;
+#          use 1.33 for 16:9 so it hangs at the same height). A width of 2 or more marks
+#          a panorama or film strip, which fills a row of its own below the prints.
 - image: snow-peak-window.jpg
 
-- image: leduomanyin.jpg
-  width: 2.1
-
 - image: cloud-sea-ridge.jpg
-  width: 1.25
+  width: 1.33
+
+- image: alpenglow.jpg
 
 - image: snow-peak.jpg
+
+- image: leduomanyin.jpg
+  width: 2

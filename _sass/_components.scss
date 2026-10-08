@@ -267,17 +267,27 @@ ul.projects {
   }
 }
 
-// Wider screens: everything hangs in a single row, each print as wide as its `width`
-// in _data/film.yml asks for.
+.film-note {
+  margin: 0.4rem 0 0;
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: right;
+  color: var(--global-text-color-light);
+}
+
+// Wider screens: the prints share one row, each as wide as its `width` in
+// _data/film.yml asks for, and wide pieces fill a row of their own below.
 @media (min-width: 576px) {
   .film-wall {
-    flex-wrap: nowrap;
     gap: 1.25rem;
     padding: 1.75rem 1.5rem;
 
     .film-frame {
       flex: var(--film-width, 1) 1 0;
-      order: 0;
+    }
+
+    .film-frame-wide {
+      flex: 0 0 100%;
     }
   }
 }
