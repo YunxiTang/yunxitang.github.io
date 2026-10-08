@@ -19,3 +19,7 @@
 - name: Hopping Robot
   url: https://github.com/YunxiTang/Advanced-Robotics-Hopping-Robot
   description: 2D hybrid-dynamics simulation of a hopping robot with a Raibert controller for forward velocity and hopping height.
+
+- name: EziTrain
+  url: https://github.com/YunxiTang/EziTrain
+  description: Python utilities that simplify machine learning model training.
