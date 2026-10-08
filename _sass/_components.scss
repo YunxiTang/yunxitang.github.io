@@ -159,16 +159,32 @@ html {
   }
 }
 
-// Closing line of the intro on the about page, set in the serif of the headings.
+// Closing line of the intro on the about page, set in the serif of the headings and
+// centred between two short hairlines, like an epigraph.
 .post.about .tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  margin: 1rem 0 0.6rem;
   font-family: "EB Garamond", Georgia, "Times New Roman", serif;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-style: italic;
   font-weight: 500;
+  letter-spacing: 0.01em;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 0 0 2.5rem;
+    height: 1px;
+    background: var(--global-text-color-light);
+  }
 }
 
-// Black-grey-white palette: links share the text colour, so they are marked by an
-// underline and fade to grey on hover.
+// Links take the dusty-blue accent; in running text they are also underlined, and they
+// lighten on hover.
 .post article :is(p, li, td) > a {
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -242,7 +258,7 @@ ul.projects {
 }
 
 // Film photographs on the about page, hung like prints on a gallery wall: a tinted wall
-// panel, each photo in a dark frame with a white mat, all centred on one eye line.
+// panel, each photo in a soft grey frame with a white mat, all centred on one eye line.
 .film-wall {
   display: flex;
   flex-wrap: wrap;
@@ -250,7 +266,7 @@ ul.projects {
   justify-content: center;
   gap: 1rem;
   padding: 1.5rem 1.25rem;
-  background: var(--global-divider-color);
+  background: var(--global-film-wall-color);
   border-radius: 2px;
 
   // Phones: normal prints sit two to a row, wide ones take a row of their own.
@@ -258,9 +274,9 @@ ul.projects {
     flex: 0 1 calc(50% - 0.5rem);
     min-width: 0;
     padding: 0.3rem;
-    background: #fafaf7;
-    border: 2px solid #1a1a1a;
-    box-shadow: 0 0.45rem 0.9rem rgba(0, 0, 0, 0.3);
+    background: #fbfaf6;
+    border: 2px solid #5b6466;
+    box-shadow: 0 0.4rem 0.9rem rgba(40, 50, 55, 0.22);
   }
 
   .film-frame-wide {
