@@ -643,31 +643,46 @@ footer.fixed-bottom {
   }
 }
 
-// Jump links at the top of the about page: a row of their own under the name and subtitle,
-// in the serif of the headings.
+// Jump links at the top of the about page, in the serif of the headings: right-aligned on
+// the name's line on wide screens (clear of the theme toggle), wrapping under the subtitle
+// on narrow ones.
 html {
   scroll-behavior: smooth;
 }
 
-.post.about .post-header .section-nav {
+.post.about .post-header {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.2rem 1.25rem;
-  margin-top: 0.5rem;
-  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
-  font-size: 1.2rem;
-  font-weight: 500;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem 1.5rem;
 
-  a {
-    color: var(--global-text-color);
-    text-decoration: none;
+  .section-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem 1.1rem;
+    padding-right: 2.75rem;
+    font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+    font-size: 1.1rem;
+    font-weight: 500;
 
-    &:hover {
-      color: var(--global-theme-color);
+    a {
+      color: var(--global-text-color);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
     }
   }
 }
 
 .post.about article > h2 {
   scroll-margin-top: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .post.about .post-header .section-nav {
+    padding-right: 0;
+  }
 }
