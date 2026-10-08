@@ -159,6 +159,14 @@ html {
   }
 }
 
+// Closing line of the intro on the about page, set in the serif of the headings.
+.post.about .tagline {
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
 // Black-grey-white palette: links share the text colour, so they are marked by an
 // underline and fade to grey on hover.
 .post article :is(p, li, td) > a {
