@@ -333,6 +333,15 @@ ul.projects {
   color: var(--global-text-color-light);
 }
 
+// Small caption under the Publications heading, set in muted italics so it reads
+// as a footnote to the section rather than a line of body copy.
+.post.about .publications-note {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--global-text-color-light);
+}
+
 // Wider screens: the prints share one row, each as wide as its `width` in
 // _data/film.yml asks for, and wide pieces fill a row of their own below.
 @media (min-width: 576px) {

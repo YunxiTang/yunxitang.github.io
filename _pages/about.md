@@ -12,6 +12,7 @@ profile:
 publications:
   enabled: true
   selected_only: false # true lists only the papers marked as "selected={true}"
+  note: "Selected publications only." # small caption printed under the Publications heading
 
 projects: true # lists the GitHub projects of `_data/projects.yml`
 education: true # lists the Education entries of `_data/cv.yml`

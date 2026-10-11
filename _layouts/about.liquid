@@ -102,6 +102,9 @@ layout: default
     <!-- Publications -->
     {% if page.publications and page.publications.enabled %}
       <h2 id="publications"><i class="fa-solid fa-file-lines" aria-hidden="true"></i>Publications</h2>
+      {% if page.publications.note %}
+        <p class="publications-note">{{ page.publications.note }}</p>
+      {% endif %}
       {% if page.publications.selected_only %}
         {% include selected_papers.liquid %}
       {% else %}
